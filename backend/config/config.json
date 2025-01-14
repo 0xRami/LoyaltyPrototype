@@ -1,0 +1,25 @@
+{
+    "tiers": {
+      "bronze": {
+        "multiplier": 1
+      },
+      "silver": {
+        "minOrders": 10,
+        "maxOrders": 19,
+        "multiplier": 1.2
+      },
+      "gold": {
+        "minOrders": 20,
+        "multiplier": 1.5
+      }
+    },
+    "rewards": {
+      "orderThreshold": 100,
+      "highOrderMultiplier": 2
+    },
+    "crypto": {
+      "USDT": "0x7169D38820dfd117C3FA1f22a697dBA58d90BA06",
+      "ETH": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14"
+    }
+  }
+  
