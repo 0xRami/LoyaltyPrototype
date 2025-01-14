@@ -65,7 +65,11 @@ Using mongodb deployed on atlas instance
    ```
 3. Configure Environment Variables:
     Create a `.env` file in the project root with the values shared with you privately.
-4. Start the application:
+5. Compile the smart contracts for ABI:
+   ```
+   npx hardhat compile
+   ```
+6. Start the application:
    ```
    npm start
    ```
@@ -166,7 +170,7 @@ Using mongodb deployed on atlas instance
 ```
 
 ### **POST /token/loyalty/withdraw**
-**Description**: Converts loyalty tokens to USDT or ETH and withdraws them to wallet address of your choice. Requires an external wallet for full flow see here
+**Description**: Converts loyalty tokens to USDT or ETH and withdraws them to wallet address of your choice. Requires an external wallet for full flow see [here](#add-sepolia-to-metamask)
 
 ---
 
@@ -219,3 +223,12 @@ Using mongodb deployed on atlas instance
 }
 ```
 
+## Add Sepolia to Metamask
+
+    Network Name - Sepolia Testnet
+    New RPC URL - Same RPC as the one in .env
+    Chain ID - 11155111
+    Currency Symbol - SepoliaETH
+    Block explorer URL - https://sepolia.etherscan.io/
+
+Import USDT to check withdrawals: 0x7169D38820dfd117C3FA1f22a697dBA58d90BA06

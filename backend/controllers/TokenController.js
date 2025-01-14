@@ -42,7 +42,7 @@ const withdraw = async(req, res) => {
     }
 
     if(currency !== "USDT" && currency !== "ETH") {
-      return res.status(400).json({message: "Invalid withdrawTo value. Must be ETH or USDT"});
+      return res.status(400).json({message: "Invalid currency value. Must be ETH or USDT"});
     }
 
     const user = await User.findOne({ username });

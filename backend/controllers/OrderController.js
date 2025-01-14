@@ -44,7 +44,7 @@ const placeOrder = async (req, res) => {
 
     res
       .status(200)
-      .json({ message: `Order placed successfully. You were awarded ${Math.ceil(points)}`, transactionHash: txHash });
+      .json({ message: `Order placed successfully. You were awarded ${Math.ceil(points)} Loyalty Tokens.`, transactionHash: txHash });
   } catch (error) {
     console.error("Error minting tokens:", error);
     res.status(500).json({ error: error.message });
