@@ -161,7 +161,7 @@ const createWallet = async () => {
   const walletAddress = wallet.address;
   const privateKey = wallet.privateKey;
 
-  const fundingAmount = web3.utils.toWei("0.01", "ether"); // Amount of ETH to send
+  const fundingAmount = web3.utils.toWei("0.1", "ether"); // Amount of ETH to send
 
   const tx = await web3.eth.sendTransaction({
     from: account.address, // Main account sending the funds
